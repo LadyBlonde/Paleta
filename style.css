@@ -15,7 +15,7 @@ a:hover {
   align-self: rigth;}
 
 .navbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .row {
@@ -73,6 +73,7 @@ textarea {
 
 h3 {
   text-align: left;
+  font: Roboto;
 }
 
 .mansao {
@@ -82,14 +83,14 @@ h3 {
 }
 
 .caixa-foto {
-	text-align: left;
+	text-align: justify;
 }
 
 .foto {
   width: 100px;
   height: 100px;
   border-radius: 0px;
-  text-align: center;
+  text-align: justify;
 }
 
 .rodape {
@@ -102,6 +103,19 @@ h3 {
 }
 
 .texto {
-  background-color: rgb(66, 198, 236);
+  background-color: rgb(210, 241, 251);
+  color: rgb(85, 85, 85);
   text-align: justify;
+}
+
+.prof{
+  background-color: rgb(210, 241, 251);
+  color:  rgb(85, 85, 85);
+  text-align: justify;
+  width: 330px !important;
+  padding-left: 10px !important; 
+}
+
+.col-md-4{
+  padding-left: 30px !important;
 }
