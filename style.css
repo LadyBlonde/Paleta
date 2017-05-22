@@ -1,21 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(12, 96, 120) !important;
+  background-color: rgb(248, 225, 22) !important;
   color: white;
 }
 
 a {
-  color: white !important;
+  color: black !important;
 }
 
 a:hover {
-  color: white !important;
-  background-color: rgb(16, 126, 158) !important;
-  align-self: rigth;}
+  color: black !important;
+  background-color: rgb(251, 236, 104) !important;
+  align-self: right;
+}
 
 .navbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .row {
@@ -27,12 +28,12 @@ a:hover {
 }
 
 .box {
-  background-color: rgb(210, 241, 251);
+  background-color: rgb(128, 101, 178);
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
   padding: 15px;
-  color: rgb(85, 85, 85);
+  color: white;
   font: Roboto;
 }
 .banner {
@@ -50,7 +51,7 @@ a:hover {
 }
 
 .col-md-12 {
-  background-color: rgb(12, 96, 120) !important;
+  background-color: rgb(248, 225, 22) !important;
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
@@ -73,6 +74,7 @@ textarea {
 
 h3 {
   text-align: left;
+  font: Roboto;
 }
 
 .mansao {
@@ -82,26 +84,39 @@ h3 {
 }
 
 .caixa-foto {
-	text-align: left;
+	text-align: justify;
 }
 
 .foto {
   width: 100px;
   height: 100px;
   border-radius: 0px;
-  text-align: center;
+  text-align: justify;
 }
 
 .rodape {
-  background-color: rgb(210, 241, 251);
+  background-color: rgb(128, 101, 178);
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
   padding: 15px;
-  color: rgb(85, 85, 85);
+  color: white;
 }
 
 .texto {
-  background-color: rgb(66, 198, 236);
+  background-color: rgb(128, 101, 178);
+  color: white;
   text-align: justify;
+}
+
+.prof{
+  background-color: rgb(128, 101, 178);
+  color: white;
+  text-align: justify;
+  width: 330px !important;
+  padding-left: 10px !important; 
+}
+
+.col-md-4{
+  padding-left: 30px !important;
 }
