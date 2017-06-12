@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(12, 96, 120) !important;
+  background-color: rgb(10, 10, 10) !important;
   color: white;
 }
 
@@ -11,8 +11,9 @@ a {
 
 a:hover {
   color: white !important;
-  background-color: rgb(16, 126, 158) !important;
-  align-self: rigth;}
+  background-color: rgb(85, 85, 85) !important;
+  align-self: right;
+}
 
 .navbar {
   background-color: transparent;
@@ -27,12 +28,12 @@ a:hover {
 }
 
 .box {
-  background-color: rgb(210, 241, 251);
+  background-color: rgb(55, 55, 55);
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
   padding: 15px;
-  color: rgb(85, 85, 85);
+  color: white;
   font: Roboto;
 }
 .banner {
@@ -50,7 +51,7 @@ a:hover {
 }
 
 .col-md-12 {
-  background-color: rgb(12, 96, 120) !important;
+  background-color: rgb(10, 10, 10) !important;
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
@@ -94,23 +95,23 @@ h3 {
 }
 
 .rodape {
-  background-color: rgb(210, 241, 251);
+  background-color: rgb(55, 55, 55);
   border-radius: 0px;
   margin-top: 10px;
   text-align: justify;
   padding: 15px;
-  color: rgb(85, 85, 85);
+  color: white;
 }
 
 .texto {
-  background-color: rgb(210, 241, 251);
-  color: rgb(85, 85, 85);
+  background-color: rgb(55, 55, 55);
+  color: white;
   text-align: justify;
 }
 
 .prof{
-  background-color: rgb(210, 241, 251);
-  color:  rgb(85, 85, 85);
+  background-color: rgb(55, 55, 55);
+  color: white;
   text-align: justify;
   width: 330px !important;
   padding-left: 10px !important; 
