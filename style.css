@@ -9,6 +9,12 @@ a {
   color: white !important;
 }
 
+.img_car{
+  size: auto;
+  width:100%;
+  height:100%;
+}
+
 a:hover {
   color: white !important;
   background-color: rgb(85, 85, 85) !important;
