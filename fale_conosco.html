@@ -4,6 +4,7 @@
 		<title>The Xavier Institute for Higher Learning - Fale Conosco</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="icon" type="image/icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/X_symbol_from_X-Men_logo.svg/1024px-X_symbol_from_X-Men_logo.svg.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script type="text/javascript">
@@ -49,13 +50,44 @@
 				</div>
 			</div>
 			<div class="row">
-				<form method="POST" action="archive.txt">
-					<br><br><input type="text" name="nome" id="nome" placeholder="Nome" size="40px"><br><br>
-					<input type="text" name="assunto" id="assunto" placeholder="Assunto" size="40px"><br><br>
-					<input type="email" name="email" id="email" placeholder="E-mail" size="40px"><br><br>
-					<textarea name="opinião" rows="5" cols="42" placeholder="Opinião"></textarea><br><br>
-					<input type="submit" value="Enviar"><br>
-				</form>
+				<div class="col-md-6">
+					<img class="img-responsive" src="images/charles.png">
+				</div>
+				<div class="col-md-6">
+					<form class="div-form form-horizontal" method="POST">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="nome">Nome:</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="nome" id="nome" placeholder="Charles Xavier" size="55px">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">E-mail:</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="email" name="email" id="email" placeholder="exemplo@gmail.com" size="55px">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="fone">Telefone:</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" data-mask="(00) 00000-0000" name="fone" id="fone" placeholder="(84) 99999-9999" size="55px">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="assunto">Assunto:</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" name="assunto" id="assunto" placeholder="Ingresso nos x-men" size="55px">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="mensagem">Mensagem:</label>
+							<div class="col-sm-10">
+								<textarea class="area form-control" name="mensagem" rows="4" cols="57" placeholder="Mensagem"></textarea>
+							</div>
+						</div>
+							<button class="botao btn" align="center" onclick="alert('Mensagem enviada.');">Enviar</button>
+					</form>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -69,6 +101,7 @@
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
