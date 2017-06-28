@@ -9,9 +9,29 @@ a {
   color: white !important;
 }
 
+.slider{
+  text-shadow: black !important;
+}
+
+.pista{
+  background-color: rgb(55,55,55) !important;
+  border-radius: 0px !important;
+}
+
+.tumber{
+  border-radius: 0px !important;
+  background-color: rgb(55,55,55) !important;
+  border-color: rgb(55,55,55) !important;
+  color: white !important;
+}
+
+p{
+  color: white !important;
+}
+
 .cards{
-  width: 238px;
-  height: 180px;
+  width: 328px !important;
+  height: 220px !important;
 }
 
 .img_car{
@@ -22,8 +42,6 @@ a {
 
 .botao{
   float: right;
-  color: black;
-  clear: both;
 }
 
 a:hover {
@@ -105,7 +123,7 @@ textarea {
 }
 
 h3 {
-  text-align: left;
+  color: white !important;
 }
 
 .mansao {
@@ -141,9 +159,7 @@ h3 {
 .prof{
   background-color: rgb(55, 55, 55);
   color: white;
-  text-align: justify;
-  width: 330px !important;
-  padding-left: 10px !important; 
+  height: 330px !important;
 }
 
 .col-md-4{

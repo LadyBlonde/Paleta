@@ -50,11 +50,24 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb pista">
+					  <li><a href="index.html">Início</a></li>
+					  <li class="active">Fale Conosco</li>
+					</ol>
+					<h1>Fale Conosco</h1>
+				</div>
 				<div class="col-md-6">
 					<img class="img-responsive" src="images/charles.png">
 				</div>
 				<div class="col-md-6">
-					<form class="div-form form-horizontal" method="POST">
+                    <!--
+					<div class="alert alert-success alert-dismissible" id="alerta" role="alert" style="border-radius: 0px;">
+						 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong>Mensagem enviada com sucesso!</strong>
+					</div>
+					-->
+					<form class="div-form form-horizontal" method="POST" action="fale_conosco.html">
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="nome">Nome:</label>
 							<div class="col-sm-10">
@@ -85,7 +98,16 @@
 								<textarea class="area form-control" name="mensagem" rows="4" cols="57" placeholder="Mensagem"></textarea>
 							</div>
 						</div>
-							<button class="botao btn" align="center" onclick="alert('Mensagem enviada.');">Enviar</button>
+						<table class="botao">
+							<tr>
+								<td>
+									<input style="margin-right: 10px;" class="btn" type="reset" value="Apagar" name="Apagar">
+								</td>
+								<td>
+									<button style="color: black !important;" class="btn" name="enviar" id="enviar">Enviar</button>
+								</td>
+							</tr>
+						</table>
 					</form>
 				</div>
 			</div>
@@ -99,10 +121,43 @@
 				</div>
 			</div>
 		</div>
+
+        <!-- Modal -->
+		<div class="modal fade">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Parabéns</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p style="color: black !important;">Mensagem enviada com sucesso!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+            function alertMensagem() {
+                $('.modal').modal('show');
+			}
+
+            $(document).ready(function () {
+                $('#enviar').on('click', function(e) {
+                    e.preventDefault();
+                    alertMensagem();
+				});
+			});
+		</script>
 	</body>
 </html>
