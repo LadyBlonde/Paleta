@@ -192,3 +192,21 @@ h3 {
   color: white;
   height: 309.58px;
 }
+
+.xavier{
+  background-color: rgb(55, 55, 55);
+  border-radius: 0px;
+  text-align: justify;
+  padding: 15px;
+  color: white;
+  height: 286.17px;
+}
+
+.banshee{
+  background-color: rgb(55, 55, 55);
+  border-radius: 0px;
+  text-align: justify;
+  padding: 15px;
+  color: white;
+  height: 304.58px;
+}
