@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>The Xavier Institute for Higher Learning - Fale Conosco</title>
+		<title>The Xavier Institute for Higher Learning - Fera</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -27,7 +27,7 @@
 							</div>
 							<div id="navbar" class="collapse navbar-collapse">
 								<ul class="nav navbar-nav">
-									<li>
+									<li class="active">
 										<a href="index.html">Início</a>
 									</li>
 									<li>
@@ -39,7 +39,7 @@
 									<li>
 										<a href="sobre_nos.html">Sobre Nós</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="fale_conosco.html">Fale Conosco</a>
 									</li>
 								</ul>
@@ -65,64 +65,22 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<ol class="breadcrumb pista">
-					  <li><a href="index.html">Início</a></li>
-					  <li class="active">Fale Conosco</li>
+					<ol class="breadcrumb pista" style="background-color: rgb(55,55,55); !important;">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="herois.html">Heróis</a></li>
+						<li class="active">Fera</li>
 					</ol>
-					<h1>Fale Conosco</h1>
+					<h1>Fera</h1>
 				</div>
 				<div class="col-md-6">
-					<img class="img-responsive" src="images/charles.png">
+					<img class="img img-responsive" src="images/fera_2.jpg">
 				</div>
 				<div class="col-md-6">
-                    <!--
-					<div class="alert alert-success alert-dismissible" id="alerta" role="alert" style="border-radius: 0px;">
-						 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<strong>Mensagem enviada com sucesso!</strong>
+					<div class="mistica">
+						<h3>Hank McCoy</h3>
+						Henry Philip McCoy nasceu em Dundee, Illinois, Estados Unidos, filho de Norton e Edna McCoy. Seu pai foi empregado em uma usina nuclear local e exposto à contaminação radioativa em um acidente no trabalho, o que supostamente foi a causa da mutação do seu filho. Hank foi dotado com um vasto intelecto e as mãos e os pés estranhamente grandes para um ser humano; na verdade, seus membros eram comparáveis aos de um gorila.<br>
+						A mutação de Henry manifestou-se inteiramente em sua adolescência e embora usasse seus poderes para se exceder nos esportes por um tempo, ele logo foi forçado a procurar um refúgio do ostracismo inevitável e da hostilidade irracional dos seres humanos normais. 
 					</div>
-					-->
-					<form class="div-form form-horizontal" method="POST" action="fale_conosco.html">
-						<div class="form-group">
-							<label class="control-label col-sm-2" for="nome">Nome: *</label>
-							<div class="col-sm-10">
-								<input class="form-control" type="text" name="nome" id="nome" placeholder="Charles Xavier" size="55px">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-2" for="email">E-mail:</label>
-							<div class="col-sm-10">
-								<input class="form-control" type="email" name="email" id="email" placeholder="exemplo@gmail.com" size="55px">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-2" for="fone">Telefone:</label>
-							<div class="col-sm-10">
-								<input class="form-control" type="text" data-mask="(00) 00000-0000" name="fone" id="fone" placeholder="(84) 99999-9999" size="55px">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-2" for="assunto">Assunto:*</label>
-							<div class="col-sm-10">
-								<input class="form-control" type="text" name="assunto" id="assunto" placeholder="Ingresso nos x-men" size="55px">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-2" for="mensagem">Mensagem:*</label>
-							<div class="col-sm-10">
-								<textarea class="area form-control" id="mensagem" name="mensagem" rows="4" cols="57" placeholder="Mensagem"></textarea>
-							</div>
-						</div>
-						<table class="botao">
-							<tr>
-								<td>
-									<input style="margin-right: 10px; background-color: rgb(30,30,30); color: white !important;" class="btn" type="reset" value="Apagar" name="Apagar">
-								</td>
-								<td>
-									<button style="color: black !important;" class="btn" name="enviar" id="enviar">Enviar</button>
-								</td>
-							</tr>
-						</table>
-					</form>
 				</div>
 			</div>
 			<div class="row">
@@ -135,62 +93,10 @@
 				</div>
 			</div>
 		</div>
-
-        <!-- Modal -->
-		<div class="modal fade">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Parabéns</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p id="msg-modal" style="color: black !important;">Mensagem enviada com sucesso!</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-            function alertMensagem() {
-              if ($('#nome').val() == '' || $('#assunto').val() == '' || $('#mensagem').val() == '') {
-                if ($('#nome').val() == '') {
-                  $('.modal-title').text('Campo obrigatório vazio');
-                  $('#msg-modal').text('O campo nome está vazio, precisa ser preenchido!');
-                }
-                if ($('#assunto').val() == '') {
-                  $('.modal-title').text('Campo obrigatório vazio');
-                  $('#msg-modal').text('O campo assunto está vazio, precisa ser preenchido!');
-                }
-                if ($('#mensagem').val() == '') {
-                  $('.modal-title').text('Campo obrigatório vazio');
-                  $('#msg-modal').text('O campo mensagem está vazio, precisa ser preenchido!');
-                }
-              }
-              else {
-                $('.modal-title').text('Parabéns');
-                $('#msg-modal').text('Mensagem enviada com sucesso!');
-              }
-                $('.modal').modal('show');
-			}
-
-            $(document).ready(function () {
-                $('#enviar').on('click', function(e) {
-                    e.preventDefault();
-                    alertMensagem();
-				});
-			});
-		</script>
 		<script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
 		<script>
 		$(document).ready(function(e) {
