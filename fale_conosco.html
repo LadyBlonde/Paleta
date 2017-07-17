@@ -109,7 +109,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="mensagem">Mensagem:*</label>
 							<div class="col-sm-10">
-								<textarea class="area form-control" name="mensagem" rows="4" cols="57" placeholder="Mensagem"></textarea>
+								<textarea class="area form-control" id="mensagem" name="mensagem" rows="4" cols="57" placeholder="Mensagem"></textarea>
 							</div>
 						</div>
 						<table class="botao">
@@ -147,7 +147,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<p style="color: black !important;">Mensagem enviada com sucesso!</p>
+						<p id="msg-modal" style="color: black !important;">Mensagem enviada com sucesso!</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
@@ -163,6 +163,24 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script type="text/javascript">
             function alertMensagem() {
+              if ($('#nome').val() == '' || $('#assunto').val() == '' || $('#mensagem').val() == '') {
+                if ($('#nome').val() == '') {
+                  $('.modal-title').text('Campo obrigatório vazio');
+                  $('#msg-modal').text('O campo nome está vazio, precisa ser preenchido!');
+                }
+                if ($('#assunto').val() == '') {
+                  $('.modal-title').text('Campo obrigatório vazio');
+                  $('#msg-modal').text('O campo assunto está vazio, precisa ser preenchido!');
+                }
+                if ($('#mensagem').val() == '') {
+                  $('.modal-title').text('Campo obrigatório vazio');
+                  $('#msg-modal').text('O campo mensagem está vazio, precisa ser preenchido!');
+                }
+              }
+              else {
+                $('.modal-title').text('Parabéns');
+                $('#msg-modal').text('Mensagem enviada com sucesso!');
+              }
                 $('.modal').modal('show');
 			}
 
